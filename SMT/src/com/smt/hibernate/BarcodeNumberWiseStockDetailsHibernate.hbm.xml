@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BarcodeNumberWiseStockDetailsHibernate.hbm.xml -->
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+	<class name="com.smt.hibernate.BarcodeNumberWiseStockDetailsHibernate" table="barcode_number_wise_stock_details">
+
+		<id name="pkBarcodeNoWiseStockId" type="java.lang.Long" column="pk_barcode_no_wise_stock_id">
+			<generator class="increment" />
+		</id>
+		
+		<property name="barcodeNo" type="java.lang.String" column="barcode_no"/>
+		<property name="fkProductId" type="java.lang.Long" column="fk_Product_Id"/>
+		<property name="itemName" type="java.lang.String" column="item_name"/>
+		<property name="fkCategoryId" type="java.lang.Long" column="fk_cat_id"/>
+		<property name="catName" type="java.lang.String" column="category_name" />
+		<property name="fkSubCategoryId" type="java.lang.Long" column="fk_sub_category_id"/>
+		<property name="subCategoryName" type="java.lang.String" column="sub_category_name" />
+		<property name="barcodeNumberWiseStockQuantity" type="java.lang.Double" column="barcode_number_wise_stock_quantity" />
+		<property name="originalQuantity" type="java.lang.Double" column="original_quantity" />
+		<property name="buyPrice" type="java.lang.Double" column="buy_price" />
+		<property name="salePrice" type="java.lang.Double" column="sale_price" />
+		<property name="fkShopId" type="java.lang.Long" column="fk_shop_id" />
+		<property name="updateDate" type="java.sql.Date" column="update_date"/>
+		
+	</class>
+</hibernate-mapping>

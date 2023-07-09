@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+	<class name="com.smt.hibernate.SupplierDetail" table="supplier_details">
+
+		<id name="supplierId" type="java.lang.Long" column="supplier_id">
+			<generator class="increment" />
+		</id>
+
+		<property name="address" type="java.lang.String" column="address" length="255" />
+
+		<property name="city" type="java.lang.String" column="city" length="255" />
+		
+		<property name="contactPerson" type="java.lang.String" column="contact_person" length="255" />
+
+		<property name="panNo" type="java.lang.String" column="pan_no" length="19" />
+		
+		<property name="email" type="java.lang.String" column="email" length="255" />
+
+		<property name="pin" type="java.lang.Long" column="pin" length="19" />
+
+		<property name="supplierName" type="java.lang.String" column="supplier_name" length="255" />
+
+		<property name="mobileno" type="java.lang.Long" column="mobileNo" length="19" />
+
+		<property name="suppCode" type="java.lang.String" column="SuppCode" length="255" />
+			
+		<property name="taxType" type="java.lang.String" column="taxType" length="255" />
+		
+		<property name="activeYn" type="java.lang.String" column="active_YN" length="255" />
+		
+		<property name="fkShopId" type="java.lang.Long" column="fkShopId" />
+		
+		<property name="supplierType" type="java.lang.String" column="supplier_TaxType" length="255" />
+		
+		<property name="AccountName" type="java.lang.String" column="account_name" length="255" />
+			
+		<property name="ifsCcode1" type="java.lang.String" column="ifsc" length="255" />
+		
+		<property name="upiid" type="java.lang.String" column="upiid" length="255" />
+		
+		<property name="AccNumber" type="java.lang.Long" column="account_number" />
+		
+
+	</class>
+</hibernate-mapping>

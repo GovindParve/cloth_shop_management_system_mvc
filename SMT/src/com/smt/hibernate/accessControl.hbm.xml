@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+	<class name="com.smt.hibernate.AccessControlBean" table="accesscontrol">
+
+		<id name="pk_Access_Control_id" type="java.lang.Long" column="pk_access_id">
+			<generator class="increment" />
+		</id>
+
+		<property name="userId" type="java.lang.Long" column="user_id" />
+		
+		<property name="empName" type="java.lang.String" column="employee_name" />
+		
+		<property name="userName" type="java.lang.String" column="username" />
+
+		<property name="password" type="java.lang.String" column="password" />
+		
+		<property name="type" type="java.lang.String" column="type" />
+
+		<property name="shopId" type="java.lang.Long" column="shop_id" />
+		
+<property name="shopName" type="java.lang.String" column="shop_name" />
+	</class>
+</hibernate-mapping>

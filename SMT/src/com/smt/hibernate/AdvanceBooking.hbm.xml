@@ -1,0 +1,39 @@
+<?xml version="1.0"?> 
+ <!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<class name="com.smt.hibernate.AdvanceBookingH" table="AdvanceBooking">
+
+		<id name="pkAdvanceBookingIdAB" type="java.lang.Long" column="pkAdvanceBookingId">
+			<generator class="increment" />
+		</id>
+
+		<property name="supplierId" type="java.lang.Long" column="fkSupplierId" />
+				
+		<property name="productId" type="java.lang.Long" column="fkProductId" />
+		
+		<property name="subCatId" type="java.lang.Long" column="fkSubcatId" />
+		
+		<property name="categoryId" type="java.lang.Long" column="fkCategoryId" />
+				
+		<property name="color" type="java.lang.String" column="color" />
+
+		<property name="rollSize" type="java.lang.Double" column="rollSize" />
+		
+		<property name="size" type="java.lang.String" column="size" />
+				
+		<property name="style" type="java.lang.String" column="style" />
+		
+		<property name="quantity" type="java.lang.Double" column="quantity" />
+		
+		<property name="bookingNoAB" type="java.lang.Long" column="bookingNo" />
+				
+		<property name="suppCode" type="java.lang.String" column="suppCode" />
+		
+		<property name="bookingDateAB" type="java.sql.Date" column="bookingDate" />
+		
+		<property name="fkShopId" type="java.lang.Long" column="fkShopId" />
+		
+	</class>
+</hibernate-mapping> 		 

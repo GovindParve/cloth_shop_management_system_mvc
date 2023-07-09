@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+ <!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<!-- BillNumberGenratorHibernate.hbm.xml -->
+
+<hibernate-mapping>
+
+	<class name="com.smt.hibernate.BillNumberGenratorHibernate" table="bill_number_genrator_details">
+
+		<id name="billNnumberGgenratorPk" type="java.lang.Long" column="bill_number_genrator_pk">
+			<generator class="increment" />
+		</id>
+
+		<property name="billNoCountor" type="java.lang.Long" column="bill_no_countor" />
+		
+		<property name="fkShopId" type="java.lang.Long" column="fk_shop_id" />
+		<property name="updatedDate" type="java.sql.Date" column="updated_date" />
+		
+	</class>
+</hibernate-mapping>

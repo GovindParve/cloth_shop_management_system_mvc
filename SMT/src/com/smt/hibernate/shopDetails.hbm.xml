@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+	<class name="com.smt.hibernate.ShopDetailsBeanH" table="shopdetails">
+
+		<id name="pkShopId" type="java.lang.Long" column="pkShopId">
+			<generator class="increment" />
+		</id>
+
+		<property name="shopName" type="java.lang.String" column="shopName" />
+		
+		<property name="contactNumber" type="java.lang.String" column="contactNumber" />
+		
+		<!-- <property name="gstNo" type="java.lang.String" column="gstNo" /> -->
+
+		<property name="shopAddress" type="java.lang.String" column="shopAddress" />
+		
+		<property name="city" type="java.lang.String" column="city" />
+
+		<property name="shopRegDate" type="java.util.Date" column="shopRegDate" />
+
+	</class>
+</hibernate-mapping>

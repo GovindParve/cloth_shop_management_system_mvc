@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+	<class name="com.smt.hibernate.BankDetailsH" table="BankDetails">
+
+		<id name="pkBankId" type="java.lang.Long" column="pkBankId">
+			<generator class="increment" />
+		</id>		
+
+		<property name="bankName" type="java.lang.String" column="bankName" />
+
+		<property name="accountNumber" type="java.lang.String" column="accountNumber" />
+
+		<property name="bankIfscCode" type="java.lang.String" column="bankIfscCode" />
+		
+		<property name="address" type="java.lang.String" column="address" />
+
+		<property name="contactNo" type="java.lang.Long" column="contactNo" />
+		
+		<property name="bankBranchName" type="java.lang.String" column="branchName" />
+
+		<property name="accountHolderName" type="java.lang.String" column="accountHolderName" />
+		
+		<property name="fkShopId" type="java.lang.Long" column="fkShopId" />
+		
+	</class>
+</hibernate-mapping>

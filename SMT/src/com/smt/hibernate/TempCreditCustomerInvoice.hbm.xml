@@ -1,0 +1,93 @@
+<?xml version="1.0"?> 
+ <!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<class name="com.smt.hibernate.TempCreditInvoice" table="TempCredit_invoice">
+
+		<id name="pkCreditBillId" type="java.lang.Long" column="pktempBillId">
+			<generator class="increment" />
+		</id>
+
+		<property name="itemName" type="java.lang.String" column="ItemName" />
+
+<property name="spAfterDis" type="java.lang.String" column="spAfterDis" />
+
+		<property name="fkRootCustId" type="java.lang.Long" column="fkCreditCustid" />
+		
+		<property name="fkgoodReciveid" type="java.lang.Long" column="fk_goodrecive_id" />
+		
+
+		<property name="categoryName" type="java.lang.String" column="CategoryName" />
+		<property name="Subcategory" type="java.lang.String" column="sub_categoryName" />
+		<property name="quantity" type="java.lang.Double" column="Quantity" />
+		<property name="rollsize" type="java.lang.Double" column="rollsize" />
+
+		<property name="salePrice" type="java.lang.Double" column="SalePrice" />
+
+		<property name="discount" type="java.lang.Double" column="Discount" />
+
+		<property name="totalAmt" type="java.lang.Double" column="TotalAmount" />
+
+		<property name="vat" type="java.lang.Double" column="Gst" />
+
+		<property name="igst" type="java.lang.Double" column="lgst" />
+
+		<property name="taxAmount" type="java.lang.Double" column="TaxAmount" />
+
+		<property name="hsnSacNo" type="java.lang.String" column="HsnSacNo" />
+
+		<property name="totalperItem" type="java.lang.Double" column="totalperitem" />
+
+		<property name="grossamt" type="java.lang.Double" column="GrossTotal" />
+
+		<property name="billNo" type="java.lang.Long" column="BillNo" />
+
+		<property name="barcodeNo" type="java.lang.Long" column="BarcodeNo" />
+
+		<property name="current_date" type="java.sql.Date" column="Date" />
+
+	
+		
+		<property name="EmpName" type="java.lang.String" column="EmpName" />
+		
+		<property name="CCBempType" type="java.lang.String" column="cEmpType" />
+		
+		<property name="CCBempIdFK" type="java.lang.Long" column="cEmpIdFk" />
+		
+		<property name="size" type="java.lang.String" column="size" />
+				
+		
+		
+		<property name="taxAmtAfterDiscount" type="java.lang.Double" column="taxAmountAfterDiscount" />
+		
+		<property name="perProductdisPer" type="java.lang.Double" column="perProductdistper" />
+		
+		<property name="spWithoutTaxAmount" type="java.lang.Double" column="salepWithoutTax" />
+		
+		<property name="fkSaleEmployeeId" type="java.lang.Long" column="fksaleEmployeeid" length="20" />
+		
+		<property name="fkProductId" type="java.lang.Long" column="fkProductId" length="20" />
+		
+		<property name="fkSubCatId" type="java.lang.Long" column="fksubCatId" length="20" />
+		
+		<property name="fkCatId" type="java.lang.Long" column="fkCatId" length="20"/>
+		
+		<property name="billTime" type="time" column="BillTime"/>
+		
+		<property name="style" type="java.lang.String" column="style" length="255"/>
+		
+		
+		
+		<property name="cPaymentDueDate" type="java.sql.Date" column="billDate" />
+
+		<property name="fkSuppId" type="java.lang.Long" column="fksuppid" length="20"/>
+		
+		<property name="fkShopId" type="java.lang.Long" column="fkshopId" />
+		
+		
+		
+		
+		
+	</class>
+</hibernate-mapping> 

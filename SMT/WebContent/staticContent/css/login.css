@@ -1,0 +1,392 @@
+@charset "ISO-8859-1";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	/* background-image: url(/SMT/staticContent/images/cloth.jpg); */
+
+	/* background: #f0f0f0; */
+}
+
+.logincontent {
+   /*  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    width: 100%;
+    background: f0f0f0;
+    padding: 30px 40px 20px 40px;
+    box-sizing: border-box;
+    /* border: 1px solid rgba(0, 0, 0, .1); */
+    box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+    /* background-color: rgba(255, 255, 255, 0.46); */
+    border-radius: 10px;
+    backdrop-filter: blur(-1px);
+    background-color: #0009;
+    border-bottom: 3px solid #13b8b2;
+}
+
+.logincontent h2 {
+    margin: 0 0 25px;
+    /* padding: 0; */
+    font-weight: 700;
+    font-size: 24px;
+    /* color: #000; */
+    text-align: center;
+    text-transform: uppercase;
+    background: #13b8b2;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.logincontent input {
+	padding: 10px 0 17px 15px;
+	margin-bottom: 30px;
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: none;
+	border: none;
+	/* border-bottom: 2px solid #a92626; */
+	outline: none;
+	border: 1px solid #000;
+	background: none;
+}
+
+.logincontent select {
+	padding: 10px 0 17px 15px;
+	margin-bottom: 30px;
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: none;
+	border: none;
+	/* border-bottom: 2px solid #a92626; */
+	outline: none;
+	border: 1px solid #000;
+	background: none;
+	border-radius: 9px;
+	border-color: #21409c;
+	/* background-color: rgb(232, 240, 254) !important; */
+	font-size:16px;
+}
+
+.logincontent label {
+    position: absolute;
+    top: 3px;
+    left: 11px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+    /* background: #fff; */
+}
+#shoplabel{
+	top: -12px;
+	left: 12px;
+	font-size: 12px;
+	padding: 2px 4px;
+}
+.logincontent input:focus ~ label {
+	top: -12px;
+	left: 12px;
+	font-size: 12px;
+	padding: 2px 4px;
+}
+
+.logincontent select:focus ~ label {
+	top: -12px;
+	left: 12px;
+	font-size: 12px;
+	padding: 2px 4px;
+}
+
+.logincontent input:valid ~ label {
+	top: -12px;
+	left: 12px;
+	font-size: 12px;
+	padding: 2px 4px;
+}
+
+.logincontent select:valid ~ label {
+	top: -12px;
+	left: 12px;
+	font-size: 12px;
+	padding: 2px 4px;
+}
+
+.logincontent input:focus ~ span, .logincontent input:valid ~ span {
+	top: -12px;
+	left: 12px;
+	font-size: 12px;
+	padding: 2px 4px;
+}
+
+.logincontent select:focus ~ span, .logincontent select:valid ~ span {
+	top: -12px;
+	left: 12px;
+	font-size: 12px;
+	padding: 2px 4px;
+}
+
+.logincontent input[type="text"] {
+	border-radius: 9px;
+	border-color: #13b8b2;
+	font-size:16px;
+	/* background-color: #f5f6f7 !important; */
+}
+
+.logincontent input[type="password"] {
+	border-radius: 9px;
+	border-color: #13b8b2;
+	font-size:16px;
+	/* background-color: #f5f6f7 !important; */
+}
+.logincontent input[list="shopname_drop"] {
+    border-radius: 9px;
+    border-color: #21409c;
+    font-size: 16px;
+    background-color: #e8f0ff;
+}
+
+.logincontent input[type="button"] {
+	border-bottom: none;
+	cursor: pointer;
+	width: 100%;
+}
+
+.logincontent input[type="reset"] {
+	border-bottom: none;
+	cursor: pointer;
+	width: 100%;
+}
+/* #forgotpassword{
+	margin-top: 13%;
+    margin-left: -32%;
+} */
+.logincontent form div {
+	position: relative;
+}
+
+/* .logincontent form div label
+{
+	position: absolute;
+	top: 15px;
+	left: 0;
+	color: #999;
+	transition: .5s;
+	pointer-events: none;
+	font-size: 16px;
+} */
+/* 
+.logincontent input:focus ~ label
+{
+	top: -14px;
+	left: 0;
+	color: #000;
+	font-size: 12px;
+	font-weight: bold;
+}  */
+
+/* .logincontent input:valid ~ label
+{
+	top: -14px;
+	color: black;
+	font-size: 12px;
+}  
+   */
+.effect-7, .effect-8, .effect-9 {
+	border: 1px solid #ccc;
+	padding: 7px 14px 9px;
+	transition: 0.4s;
+}
+
+.effect-7 ~ .focus-border:before, .effect-7 ~ .focus-border:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 2px;
+	background-color: #3399FF;
+	transition: 0.4s;
+}
+
+.effect-7 ~ .focus-border:after {
+	top: auto;
+	bottom: 0;
+}
+
+.effect-7 ~ .focus-border i:before, .effect-7 ~ .focus-border i:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 2px;
+	height: 0;
+	background-color: #3399FF;
+	transition: 0.6s;
+}
+
+.effect-7 ~ .focus-border i:after {
+	left: auto;
+	right: 0;
+}
+
+.effect-7:focus ~ .focus-border:before, .effect-7:focus ~ .focus-border:after
+	{
+	left: 0;
+	width: 100%;
+	transition: 0.4s;
+}
+
+.effect-7:focus ~ .focus-border i:before, .effect-7:focus ~
+	.focus-border i:after {
+	top: 0;
+	height: 100%;
+	transition: 0.6s;
+}
+
+.col-md-4.col-sm-4.col-xs-4.col-lg-4.col-md-offset-2 {
+	width: 100%;
+	margin-top: 5px;
+}
+
+@media ( max-width : 1180px) { /* #forgotpassword{
+	margin-top:5%;
+    margin-left: 5%;
+} */
+}
+
+
+/*--------------------------------------------------- New Css ------------------------------------------------------*/
+
+.control {
+	position: relative;
+	margin: 20px 0px 40px;
+	/* width: 300px; */
+}
+.logincontent select {
+    border-radius: 9px;
+    border-color: #13b8b2 !important;
+    font-size: 16px !important;
+    /* background-color: #f5f6f7 !important; */
+}
+.background {
+	background-image: url('/SMT/staticContent/images/68773232-clothes-wallpapers.jpg');
+	background-repeat: repeat;
+    background-size: cover;
+    opacity: 0.9;
+}
+.login {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    /* flex-direction: column; */
+}
+.control input {
+	background-color: transparent;
+	border: 0;
+	border-bottom: 2px solid white;
+	display: block;
+	width: 100%;
+	padding: 10px 15px;
+	font-size: 18px;
+	color: #fff;
+}
+.control select {
+	background-color: transparent;
+	border: 0;
+	border-bottom: 2px solid white;
+	display: block;
+	width: 100%;
+	padding: 10px 15px;
+	font-size: 18px;
+	color: #2bbfba;
+}
+.control input:focus,
+.control input:valid {
+	outline: 0;
+	border-bottom-color: #824592;
+}
+.control select:focus,
+.control select:valid {
+	outline: 0;
+	border-bottom-color: #2bbfba !important;
+}
+.control select:focus {
+	border-bottom-color: #8f589b !important;
+}
+.control label {
+    position: absolute;
+    top: 6px;
+    left: 15px;
+}
+.control label span {
+	display: inline-block;
+	font-size: 18px;
+	min-width: 5px;
+	transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.control input:focus + label span,
+.control input:valid + label span {
+	color: #824592;
+	transform: translateY(-25px);
+}
+.forgotpass {
+    /* margin-left: 9%; */
+    /* margin-top: 12px; */
+    font-size: 15px;
+    padding: 8px;
+    font-weight: 500;
+}
+button.btn.btn-md.btn-lg.btn-success {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #13b8b2;
+    outline: none !important;
+    border: none !important;
+}
+button.btn.btn-md.btn-lg.btn-success:focus {
+	border: none !important;
+	outline: none !important;
+}
+button.btn.btn-md.btn-lg.btn-success:visited {
+	border: none !important;
+	outline: none !important;
+}
+button.btn.btn-md.btn-lg.btn-success:hover {
+	background: #F15F79;
+ 	outline: none !important;
+	border: none !important;
+	box-shadow: none !important
+}
+.forgotpass a {
+    /* color: #45f3ff !important; */
+    /* background: linear-gradient(to right, #824592, #F15F79); */
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-color: #45f3ff;
+    font-weight: 800;
+}
+.shopname label {
+    font-size: 14px !important;
+}
+
+
+@media screen and (max-width: 480px) {
+.logincontent {
+    padding: 20px 20px;
+}
+.control {
+	margin: 20px 0px 20px; 
+}
+}

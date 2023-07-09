@@ -1,0 +1,265 @@
+@charset "ISO-8859-1";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	margin: 0;
+	padding:0;
+	font-family: sans-serif;
+	background: #f0f0f0;
+	width: 100%;
+	overflow-x: hidden;
+}
+ .miscellaneous{
+	position: relative;
+	margin-top: 25px;
+	left: 0;
+
+} 
+
+.miscellaneous input{
+	padding: 10px 10px;
+	margin-bottom: 30px;
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: none;
+	/* border: none; */
+	border: 1px solid #000;
+	/* border-bottom: 2px solid #a92626; */
+}
+
+ .miscellaneous label{
+  position: absolute;
+    top: -23px;
+    left: 18px;
+    padding: 10px 0;
+    font-size: 16px;
+    color:  #000;
+    pointer-events: none;
+    transition: .5s;
+    background-color: #f0f0f0;
+   
+} 
+
+.invoice_label_up label{
+	position: absolute;
+	top: 15px;
+	left: 20px;
+	padding: 0;
+	transition: 0.3s;
+	
+}
+
+.invoice_label_up input:focus ~ label,
+.invoice_label_up input:valid ~ label{
+	top: -12px;
+	left: 25px;
+	font-size: 12px;
+	padding: 2px 4px;
+	background-color: #f0f0f0;
+	font-size: 16px;
+} 
+
+.miscellaneous input[type="text"]{
+	    border-radius: 9px;
+	    border-color: #21409c;
+	    background-color: #f0f0f0;
+	   
+}
+
+
+.miscellaneous input{
+	    border-radius: 9px;
+	    border-color: #21409c;
+	    background-color: #f0f0f0;
+	    padding: 13px;
+}
+
+.miscellaneous select{
+	    border-radius: 9px;
+	    border-color: #21409c;
+	    background-color: #f0f0f0;
+	    padding: 13px;
+}
+
+.miscellaneous select{
+	padding: 10px 10px;
+	margin-bottom: 30px;
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: none;
+	font-size: 16px;
+	font-weight: 700;
+	/* border: none; */
+	
+	/* border-bottom: 2px solid #a92626; */
+}
+
+.invoice_grid{
+	margin-left: -194px;
+    margin-bottom: 23px;
+    margin-top: 0px;
+} 
+
+.invoice_grid_1{
+	margin-left: -290px;
+	padding-top: 18px;
+}
+
+
+.invoice_button input{
+	padding-bottom: 35px;
+}
+
+
+.miscellaneous textarea{
+	    border-radius: 9px;
+	    border-color: #21409c;
+	    background-color: #f0f0f0;
+	    padding: 13px;
+}
+
+.invoice_button_allPaymentWithLeftTabs input[type="button"]{
+	width: 129px;
+	padding-bottom: 15px;
+	margin-top: 28px;
+}
+
+.invoice_button_allPaymentWithLeftTabs input[type="reset"]{
+	width: 129px;
+	padding-bottom: 15px;
+	margin-top: 28px;
+}
+
+
+.bar{
+position: relative;
+display: block;
+}
+
+.bar:after, .bar:before{
+content: "";
+width: 0;
+height: 2px;
+bottom: 29px;
+background: green;
+position: absolute;
+transition: all ease 0.2s;
+-webkit-transition:  all ease 0.2s;
+-moz-transition:  all ease 0.2s;
+}
+
+.bar:before{
+left: 48%;
+}
+
+.bar:after{
+right: 48%;
+}
+
+input:focus ~ .bar:before, input:focus ~ .bar:after{
+width: 50%;
+} 
+.prd_det_btn{
+	    margin-left: 12%;
+    margin-right: -3%;
+}
+.col-md-offset-2{
+    margin-left: 20.66667%;	
+}
+.col-lg-2 {
+    margin-right: 4%;
+}
+@media only screen and (max-width: 1180px) {
+.prd_det_btn {
+    margin-left: -17%;
+    margin-right: -3%;
+}
+.col-md-2.col-md-offset-3.align {
+    width: auto;
+    margin-left: 26.66667%;
+}
+.col-md-offset-2{
+	    margin-left: -18.33333%;
+}
+.col-lg-2 {
+    margin-right: -2%;
+}
+	}
+@media only screen and (max-width: 991px) {
+.prd_det_btn{
+	    margin-left: -27%;
+    margin-right: -3%;
+}	
+.col-md-2.control-label {
+    position: absolute;
+}
+.col-md-2.col-md-offset-3.align {
+    width: auto;
+    margin-left: 6.66667%;
+}
+.col-md-offset-2{
+	    margin-left: -28.33333%;
+}
+	}
+@media only screen and (max-width: 767px) {
+	.prd_det_btn{
+	    margin-left: -18%;
+    margin-right: -15%;
+}
+.col-md-2.col-md-offset-3.align {
+    width: auto;
+    margin-left: 6.66667%;
+    margin-top: 32px;
+}
+.col-md-2.control-label {
+    position: absolute;
+    top: 4%;
+}
+.col-md-offset-2{
+margin-left: -12.33333%;	
+}
+	}	
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+col-md-6{
+	width: 100%;
+}
+col-lg-6{
+	width: 100%;
+}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	body{
+	margin-top: 38px;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+	}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+	}
+
+
+
+
+  
+
+

@@ -1,0 +1,251 @@
+@charset "ISO-8859-1";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: #f0f0f0;
+}
+
+.gdrcv_fabric {
+	position: absolute;
+	margin-top: 0;
+	left:0;
+	width: 100%;
+	padding-top: 10px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, .2)*/;
+}
+
+.gdrcv_fabric input {
+	padding: 10px 10px;
+	margin-bottom: 30px;
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: none;
+	/* border: none; */
+	border: 1px solid #000;
+	/* border-bottom: 2px solid #a92626; */
+}
+
+.gdrcv_fabric label {
+	position: absolute;
+	top: 15px;
+	left: 20px;
+	padding: 0;
+	transition: 0.3s;
+}
+
+.gdrcv_fabric label {
+	position: absolute;
+	top: -23px;
+	left: 18px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #000;
+	pointer-events: none;
+	transition: .5s;
+	background-color: #f0f0f0;
+}
+
+.fabric_label_up label {
+	position: absolute;
+	top: 15px;
+	left: 20px;
+	padding: 0;
+	transition: 0.3s;
+}
+
+.fabric_label_up input:focus ~ label, .fabric_label_up input:valid ~
+	label {
+	top: -12px;
+	left: 25px;
+	font-size: 12px;
+	padding: 2px 4px;
+	background-color: #f0f0f0;
+	font-size: 16px;
+}
+
+.gdrcv_fabric input[type="text"] {
+	border-radius: 9px;
+	border-color: #21409c;
+	background-color: #f0f0f0;
+}
+
+.gdrcv_fabric input {
+	border-radius: 9px;
+	border-color: #21409c;
+	background-color: #f0f0f0;
+	padding: 13px;
+}
+
+.gdrcv_fabric input[type="date"] {
+	border-radius: 9px;
+	border-color: #21409c;
+	background-color: #f0f0f0;
+}
+
+.gdrcv_fabric input[type="button"] {
+	border-bottom: none;
+	cursor: pointer;
+	width: 100%;
+	padding-bottom: 30px;
+}
+
+.gdrcv_fabric input[type="reset"] {
+	border-bottom: none;
+	cursor: pointer;
+	width: 100%;
+	padding-bottom: 30px;
+}
+
+.godbtn {
+	position: absolute;
+	margin-top: 15px;
+	margin-left: -10px;
+}
+
+.godbtn1 {
+	position: absolute;
+	margin-top: 15px;
+	margin-left: -23px;
+}
+
+#fabric_grid {
+    margin-left: -274px;
+    margin-right: -100px;
+    margin-bottom: 24px;
+}
+.col-md-offset-2 {
+    margin-left: 18.666667%;
+}
+#goodrcvtotalcol {
+    width: 28%;
+    margin-left: -4%;
+    margin-right: 43px;
+}
+.col-lg-3 {
+    width: 27%;
+    margin-left: 3.6667%;
+}
+@media screen and (max-width:1180px) {
+	.fabricbutton {
+		padding-left: 9%;
+	}
+	.col-md-2 {
+		width: 20%;
+	}
+	#fabric_grid {
+		margin-left: -193px;
+		margin-right: -102px;
+		margin-bottom: 24px;
+	}
+#goodrcvtotalcol {
+    width: 27%;
+    margin-left: -1%;
+    margin-right: 25px;
+}
+.col-md-offset-2 {
+    margin-left: 21.666667%;
+}
+.col-lg-3 {
+    width: 27%;
+    margin-left: 6.6667%;
+}
+}
+
+
+@media screen and (max-width:991px) {
+	.col-md-2 {
+		width: 22%;
+	}
+	.fabricbutton {
+		padding-left: 0%;
+	}
+	#fabric_grid {
+		margin-left: -214px;
+		margin-right: -28px;
+		margin-bottom: 24px;
+	}
+	.col-md-offset-2 {
+    margin-left: 29.666667%;
+}
+#goodrcvtotalcol {
+    width: 27%;
+    margin-left: -1%;
+    margin-right: -8px;
+}
+.col-lg-3 {
+    width: 27%;
+    margin-left: 48.6667%;
+}
+}
+
+@media screen and (max-width:767px) {
+#fabric_grid {
+    margin-left: -139px;
+    margin-right: -80px;
+    margin-bottom: 24px;
+    width: auto;
+	}
+	.fabricbutton {
+    padding-left: 0%;
+}
+.col-md-2 {
+		width: 28%;
+	}
+#goodrcvtotalcol {
+    width: 33%;
+    margin-left: -1%;
+    margin-right: -8px;
+}
+.col-lg-3 {
+    width: 34%;
+    margin-left: 59.6667%;
+}
+.col-md-offset-2 {
+    margin-left: 29.666667%;
+}
+.voucher {
+    position: absolute;
+    margin-top: -40px;
+    right: 0;
+}
+}
+@media only screen and (max-width: 600px) {
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+col-md-6{
+	width: 100%;
+}
+col-lg-6{
+	width: 100%;
+}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	body{
+	margin-top: 38px;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+	}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+	}
+
+

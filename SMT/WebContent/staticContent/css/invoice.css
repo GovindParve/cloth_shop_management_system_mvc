@@ -1,0 +1,2158 @@
+@charset "ISO-8859-1";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: #f0f0f0;
+	width: 100%;
+	overflow-x: hidden;
+}
+.miscellaneous {
+	position: relative;
+	margin-top: 25px;
+	/* left: 1%; */
+}
+.miscellaneous input {
+	padding: 10px 10px;
+	margin-bottom: 30px;
+	width: 99%;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: none;
+	/* border: none; */
+	border: 1px solid #000;
+	/* border-bottom: 2px solid #a92626; */
+}
+.miscellaneous label {
+	position: absolute;
+	top: -23px;
+	left: 18px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #000;
+	pointer-events: none;
+	transition: .5s;
+	background-color: #f0f0f0;
+}
+.invoice_label_up label {
+	position: absolute;
+	top: 15px;
+	left: 20px;
+	padding: 0;
+	transition: 0.3s;
+}
+.invoice_label_up input:focus ~ label, .invoice_label_up input:valid ~ label {
+	top: -12px;
+	left: 25px;
+	font-size: 12px;
+	padding: 2px 4px;
+	background-color: #f0f0f0;
+	font-size: 16px;
+}
+.miscellaneous input[type="text"] {
+	border-radius: 9px;
+	border-color: #21409c;
+	background-color: #f0f0f0;
+}
+.miscellaneous input {
+	border-radius: 9px;
+	border-color: #21409c;
+	background-color: #f0f0f0;
+	padding: 12px;
+}
+.miscellaneous select {
+	border-radius: 9px;
+	border-color: #21409c;
+	background-color: #f0f0f0;
+	padding: 13px;
+}
+.miscellaneous select {
+	padding: 12px 10px;
+	margin-bottom: 30px;
+	width: 99%;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: none;
+	font-size: 16px;
+	font-weight: 700;
+	/* border: none; */
+
+	/* border-bottom: 2px solid #a92626; */
+}
+.invoice_grid {
+	/* margin-left: -32%; */
+	margin-bottom: 3%;
+	margin-top: 0px;
+	/* width: 141%; */
+}
+.invoice_grid1 {
+	/* margin-left: -30%; */
+	margin-bottom: 5%;
+	margin-top: 0px;
+	width: 100%;
+}
+.invoice_grid_1 {
+	/* margin-left: -290px; */
+	padding-top: 18px;
+	/* width: max-content; */
+}
+.invoice_button input {
+	/* padding-bottom: 30px; */
+	width: auto;
+}
+.miscellaneous textarea {
+	border-radius: 9px;
+	border-color: #21409c;
+	background-color: #f0f0f0;
+	padding: 13px;
+	outline: none;
+}
+.invoice_button_allPaymentWithLeftTabs input[type="button"] {
+	width: 124px;
+	padding-bottom: 10px;
+	margin-top: 28px;
+}
+.invoice_button_allPaymentWithLeftTabs input[type="reset"] {
+	width: 124px;
+	padding-bottom: 10px;
+	margin-top: 28px;
+}
+.invoice_button_allPaymentWithLeftTabs {
+    /* margin-left: 205px; */
+}
+.bar {
+	position: relative;
+	display: block;
+}
+.bar:after, .bar:before {
+	content: "";
+	width: 0;
+	height: 2px;
+	bottom: 29px;
+	background: green;
+	position: absolute;
+	transition: all ease 0.2s;
+	-webkit-transition: all ease 0.2s;
+	-moz-transition: all ease 0.2s;
+}
+.bar:before {
+	left: 48%;
+}
+.bar:after {
+	right: 48%;
+}
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+	width: 50%;
+}
+.col-md-offset-2 {
+	margin-left: 18.666667%;
+}
+.col-md-offset-3 {
+	margin-left: 24%;
+}
+#newtaxbutn {
+	padding-left: 18%;
+}
+.col-md-offset-4 {
+	margin-left: 18.66667%;
+}
+.col-lg-2.col-md-4.col-xs-4.col-xl-4 {
+	width: auto;
+}
+#barcodeh2 {
+	margin-left: 11%;
+	width: auto;
+	margin-top: 12px;
+}
+.col-lg-offset-3 {
+	margin-left: 23%;
+}
+.col-lg-2 {
+	margin-right: 5%;
+}
+#setdiscounth2 {
+	margin-left: 23%;
+}
+.invoice_button{
+	/* margin-left: 3.6667%;
+	margin-right: 9%; */
+}
+.col-md-5 {
+    width: 43.666667%;
+}
+.col-lg-offset-2 {
+    margin-left: 2.66667%;
+}
+.col-md-offset-6 {
+    margin-left: 22%;
+}
+#editbillh2 {
+    margin-top: 17px;
+    margin-left: 217px;
+}
+#editbillcol{
+	width: 100%;
+}
+/* #editbilltab {
+    margin-left: 29%;
+} */
+.col-md-2.col-md-offset-2.align {
+    margin-top: 33;
+    margin-left: 15%;
+}
+.col-md-6.col-sm-12.col-xs-12.col-xl-4.col-lg-4.col-lg-offset-3 {
+    margin-left: 148px;
+}
+#transid {
+    width: 50%;
+    margin-left: 25%;
+}
+#categorybaseinvent {
+    width: 50%;
+    margin-left: 25%;
+}
+#invoicebaseinvent{
+	/* width: 40%; */
+    margin-left: 33%;
+}
+.invoice_button_categorybasedinventory {
+   /*  margin-left: 376px; */
+}
+#invoicereprint {
+    margin-top: 76px;
+}
+#invoicereprintcol {
+    width: 50%;
+    margin-left: 25%;
+}
+.editcustmerdetails {
+   /*  margin-left: 16%; */
+}
+#salereportcont{
+	width: 90%;
+    margin-left: 6%;
+}
+
+
+
+
+@media only screen and (max-width: 1180px) {
+.invoice_grid {
+    /* margin-left: -26%; */
+    margin-bottom: 5%;
+    margin-top: 0px;
+    width: 100%;
+}
+	#newtaxbutn {
+    	padding-left: 26%;
+	}
+	.col-md-offset-2 {
+		margin-left:-19.333333%;
+	}
+	.col-md-offset-3 {
+		margin-left: 25%;
+	}
+	.col-md-offset-4 {
+		margin-left: 21.66667%;
+	}
+	.col-lg-offset-2 {
+		margin-left: 10.66667%;
+	}
+	.col-lg-offset-3 {
+		margin-left: -20%;
+	}
+	.col-lg-2 {
+		margin-right: 0%;
+	}
+	#barcodeh2 {
+		margin-left: 11%;
+		width: auto;
+		margin-top: 12px;
+	}
+	#setdiscounth2 {
+		    margin-left: 22%;
+	}
+	/* .invoice_button{
+		margin-left: 24.6667%;
+	} */
+	.col-md-5 {
+    	width: 45.666667%;
+	}
+	.col-md-2 {
+    	margin-right: 3%;
+	}
+	.col-md-offset-6 {
+    	margin-left: 23%;
+	}
+	#editbillh2 {
+    	margin-top: 17px;
+    	margin-left: 342px;
+	}
+	#editbillcol {
+    	width: 100%;
+	}
+	#editbilltab {
+    	/* margin-left: 24%; */
+	}
+.invoice_grid1 {
+   	/* margin-left: -28%; */
+   	margin-bottom: 5%;
+   	margin-top: 0px;
+   	width: 100%;
+}
+	.col-md-2.col-md-offset-2.align {
+    	margin-top: 33;
+    	margin-left: 24%;
+	}
+/* 	#categorybaseinvent {
+    	width: 40%;
+    	margin-left: 274px;
+	} */
+	.invoice_button_categorybasedinventory {
+    	/* margin-left: 288px; */
+	}
+	.col-lg-2.col-lg-offset-3 {
+    	margin-left: 31%;
+	}
+#invoicebaseinvent {
+    width: 50%;
+    margin-left: 25%;
+    /* margin-right: -80px; */
+}
+	.invoice_button_allPaymentWithLeftTabs {
+    	/* margin-left: 174px; */
+	}
+	#transid {
+    	/* width: 40%;
+    	margin-left: 170px; */
+	}
+	.editcustmerdetails {
+    	margin-left: 6%;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+.invoice_grid {
+    /* margin-left: -33%; */
+    margin-bottom: 5%;
+    margin-top: 0px;
+    width: 100%;
+}
+/* 	.invoice_grid1 {
+    	margin-left: -32%;
+    	margin-bottom: 5%;
+    	margin-top: 0px;
+    	width: 136%;
+	} */
+	#newtaxbutn {
+		padding-left: 16%;
+	}
+	.col-md-offset-2 {
+		margin-left: -36.666667%;
+	}
+	.col-md-offset-3 {
+		margin-left: 5%;
+	}
+	.col-md-offset-4 {
+		margin-left: 2.66667%;
+	}
+	.col-lg-offset-2 {
+		margin-left: 2.66667%;
+	}
+	.col-lg-offset-3 {
+		margin-left: -35%;
+	}
+	.col-md-2.control-label, .col-md-3 {
+		width: 21%;
+		/* position: absolute; */
+	}
+	#barcodeh2 {
+		margin-left: 8%;
+		width: auto;
+		margin-top: 20px;
+	}
+	.col-lg-2 {
+		margin-right: -4%;
+	}
+	#setdiscounth2 {
+		margin-left: 8.6667%;
+	}
+	/* .invoice_button{
+		margin-left: 11.6667%;
+	} */
+	.col-md-2 {
+    	margin-right: -1%;
+	}
+	.col-md-offset-6 {
+    	margin-left: 33%;
+	}
+/* .col-md-2{
+		position:absolute;
+	} */
+	#editbillh2 {
+    	margin-top: 22px;
+    	margin-left: -3px;
+	}
+#invoicebaseinvent {
+    width: 50%;
+    margin-left: 25%;
+    /* margin-right: -5px; */
+}
+	#categorybaseinvent {
+    	/* width: 40%;
+    	margin-left: 223px; */
+	}
+	.invoice_button_categorybasedinventory {
+    	/* margin-left: 265px; */
+	}
+	#editbilltab {
+    	/* margin-left: 28%; */
+	}
+	.col-md-2.col-md-offset-2.align {
+    	margin-top: 28px;
+    	margin-left: 0%;
+	}
+	.invoice_button_allPaymentWithLeftTabs {
+    	/* margin-left: 88px; */
+	}
+#transid {
+    width: 50%;
+    margin-left: 25%;
+}
+	.editcustmerdetails {
+    	margin-left: 6%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+.invoice_grid {
+    /* margin-left: -31%; */
+    margin-bottom: 5%;
+    margin-top: 0px;
+    width: 100%;
+}
+	#newtaxbutn {
+		padding-left: 14%;
+	}
+	.col-md-offset-2 {
+		margin-left: -21.666667%;
+	}
+	.col-md-offset-3 {
+    	margin-left: -1%;
+    	margin-top: 35px;
+	}
+	.col-md-offset-4 {
+		margin-left: 5.66667%;
+		margin-top: 32px;
+	}
+	.col-md-2.control-label, .col-md-3 {
+		width: 23%;
+		/* position: absolute; */
+		margin-top: 3%;
+	}
+	.col-lg-offset-3 {
+		margin-left: -16%;
+	}
+	.col-lg-offset-2 {
+		margin-left: -5.33333%;
+	}
+
+	#barcodeh2 {
+		margin-left: 8%;
+		width: auto;
+		margin-top: 41px;
+	}
+	#setdiscounth2 {
+		margin-left: 8.6667%;
+    	margin-top: 36px;
+	}
+	/* .invoice_button{
+	    margin-left: 2.6667%;
+	} */
+/* .col-md-2 {
+    	position: absolute;
+    	margin-top: 30px;
+	} */
+	.col-md-offset-6 {
+    	margin-left: 31%;
+	}
+	#editbillh2 {
+    	margin-top: 47px;
+    	margin-left: -3px;
+	}
+#transid {
+    width: 60%;
+    margin-left: 20%;
+}
+#categorybaseinvent {
+   	width: 60%;
+   	margin-left: 20%;
+}
+	.invoice_button_categorybasedinventory {
+    	/* margin-left: 324px; */
+	}
+/* 	.invoice_grid1 {
+    	margin-left: -32%;
+    	margin-bottom: 5%;
+    	margin-top: 0px;
+    	width: 148%;
+	} */
+	.invoice_button_allPaymentWithLeftTabs {
+    	/* margin-left: 76px; */
+	}
+	.col-md-2.col-md-offset-2.align {
+    	margin-top: 49px;
+    	margin-left: 5%;
+	}
+#invoicebaseinvent {
+   	width: 60%;
+	margin-left: 20%;
+    /* margin-right: -5px; */
+}
+#invoicereprintcol {
+    width: 60%;
+    margin-left: 20%;
+}
+	.editcustmerdetails {
+    	margin-left: 2%;
+	}
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	col-md-6 {
+		width: 100%;
+	}
+	col-lg-6 {
+		width: 100%;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	body {
+		margin-top: 38px;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+
+/*--------------------------------------------------- New Css Starts Here ---------------------------------------------------*/
+ .invoice_button {
+    text-align: center;
+}
+.allreport {
+    margin-top: 50px;
+}
+hr {
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+    margin: 20px 0;
+    border: 0;
+    /* border-top: 1px solid #eee; */
+    width: 80%;   
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+#prodlist {
+   /*  margin-left: -24%; */
+}
+.invoice_button .btn {
+    margin-bottom: 15px;
+    outline: none !important;
+    border: none;
+}
+.categoryheading {
+    margin-top: 30px;
+}
+.btnwidth {
+    width: 130px !important;
+    /* padding: 10px !important; */
+}
+#notifycol {
+    width: 90%;
+   	margin-left: 5%;
+}
+.col-md-3.col-sm-12.col-xs-12.col-xl-3.col-lg-3 {
+    width: 80%;
+    margin-left: 10%;
+}
+.col-md-4.col-sm-12.col-xs-12.col-xl-3.col-lg-3 {
+    width: 90%;
+    margin-left: 5%;
+}
+#subCategoryDialogDiv {
+    height: 260px !important;
+}
+#popupcreditcol {
+    width: 50%;
+}
+.subheadingedit {
+    margin: 30px 0;
+}
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	/* background-color: #B4041B; */
+	background: #353535;
+	/* color: white; */
+	z-index: 99999;
+	color: orange;
+	font-size: 20px;
+	text-align: center;
+}
+.footer p {
+	padding: 6px;
+	font-weight: 600;
+}
+input[type="file"] {
+    outline: none !important;
+}
+#billheading {
+    margin: 20px 0 0 20px;
+}
+.vouch {
+	padding-top: 15px;
+}
+.vouchspan {
+    font-size: 24px;
+    color: red;    
+}
+.editpurchaseheading {
+    padding-top: 20px;
+}
+.newlabelback {
+	background-color: transparent !important;
+	top: -25px !important;
+} 
+
+/*--------------------------------------------------- New Css Ends Here ---------------------------------------------------*/
+
+/*--------------------------------------------------- Reports (DataTable) Css Starts Here ---------------------------------------------------*/
+button.dt-button, div.dt-button, a.dt-button {
+    margin-right: 0.333em;
+    padding: 8px 14px;
+    border: 1px solid #999;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+}
+.dataTables_wrapper {
+    /* border: 1px solid #000; */
+	border-radius: 10px;
+	background: linear-gradient(45deg, black, #191984);
+}
+.table-responsive {
+    /* border: 1px solid #000 !important; */
+    border-radius: 10px !important;
+    border: none !important;
+}
+#currStock_info {
+    margin: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    padding: 0px;
+}
+.dt-buttons {
+    position: relative;
+    float: left;
+    margin-left: 6px;
+    margin: 10px;
+}
+.dataTables_wrapper .dataTables_filter input {
+    margin-left: 0.5em;
+    padding: 7px;
+    border-radius: 18px;
+    outline: none;
+    border: none;
+}
+.dataTables_wrapper .dataTables_filter {
+    float: right;
+    text-align: right;
+    margin: 10px;
+}
+#currStock_first, #currStock_previous, #currStock_next, #currStock_last, #catName_first, #catName_previous, #catName_next, #catName_last,
+#itemName_previous, #itemName_next, #suppName_first, #suppName_previous, #suppName_next, #suppName_last, #list_previous, #list_next,
+#preGood_first, #preGood_previous, #preGood_next, #preGood_last, #currStock1_first, #currStock1_previous, #currStock1_next, #currStock1_last,
+#example_previous, #example_next, #example1_previous, #example1_next, #example2_previous, #example2_next, #barcodeBasedStock_first, #barcodeBasedStock_previous,
+#barcodeBasedStock_next, #barcodeBasedStock_last, #unPaidAmt_previous, #unPaidAmt_next, #example4_first, #example4_previous, #example4_next, #example4_last, 
+#example_first, #example_last, #example1_first, #example1_last, #suppGstReportBetweenTwoDatesDataTable_first, #suppGstReportBetweenTwoDatesDataTable_previous,
+#suppGstReportBetweenTwoDatesDataTable_next, #suppGstReportBetweenTwoDatesDataTable_last, #purchaseNoGstWise_first, #purchaseNoGstWise_previous, #purchaseNoGstWise_next,
+#purchaseNoGstWise_last, #saleB2CGSTReport_previous, #saleB2CGSTReport_next, #purchaseB2BGSTReport_previous, #purchaseB2BGSTReport_next,
+#supplierNameWiseTable_previous, #supplierNameWiseTable_next, #supplierSingleDatetable_previous, #supplierSingleDatetable_next, #supplierBetweenTwoDatestable_previous,
+#supplierBetweenTwoDatestable_next, #customerNameWiseData2_previous, #customerNameWiseData2_next, #customerSingleDatetable_previous,
+#customerSingleDatetable_next, #customerBetweenTwoDates_previous, #customerBetweenTwoDates_next, #customerNameWiseData_previous, #customerNameWiseData_next,
+#employeeSingleDatetable_previous, #employeeSingleDatetable_next, #empBetweenTwoDates_previous, #empBetweenTwoDates_next, #expenseSingleDatetable_previous,
+#expenseSingleDatetable_next, #expenseBetweenTwoDates_previous, #expenseBetweenTwoDates_next, #bankBetweenTwoDatesTable_previous, #bankBetweenTwoDatesTable_next,
+#supplierNameWiseTable1_previous, #supplierNameWiseTable1_next, #singleDatePurchase50_previous, #singleDatePurchase50_next, #twoDatePurchase50_previous,
+#twoDatePurchase50_next, #supplierCategoryWise_previous, #supplierCategoryWise_next, #supplierProductWise_previous, #supplierProductWise_next,
+#voucherNoWiseData_previous, #voucherNoWiseData_next, #barcodeWisePurchaseReport_previous, #barcodeWisePurchaseReport_next, #paymentDueDateWiseTable_previous,
+#paymentDueDateWiseTable_next, #twoDateGstReturnPurchase_previous, #twoDateGstReturnPurchase_next, #expenseRangeReport_previous, #expenseRangeReport_next,
+#purchaseReturnSingleDateReport_previous, #purchaseReturnSingleDateReport_next, #purchaseReturnRangeReport_previous, #purchaseReturnRangeReport_next,
+#saleCategoryWise_previous, #saleCategoryWise_next, #saleProductWise_previous, #saleProductWise_next, #saleSingleDate_previous, #saleSingleDate_next,
+#saleTwoDate_userWise_previous, #saleTwoDate_userWise_next, #saleTwoDateBillNo_previous, #saleTwoDateBillNo_next, #twoDateGstReturn_previous, #twoDateGstReturn_next,
+#paymentModeWiseReportTable_previous, #paymentModeWiseReportTable_next, #saleTaxWise_previous, #saleTaxWise_next, #miscellaneousSingleDateReport_previous,
+#miscellaneousSingleDateReport_next, #miscellaneousTwoDateReport_previous, #miscellaneousTwoDateReport_next, #miscellaneousSaleWiseCustomerReport_previous,
+#miscellaneousSaleWiseCustomerReport_next, #billnowiseMiscellaneous_previous, #billnowiseMiscellaneous_next, #barcodewiseMiscellaneous_previous, #barcodewiseMiscellaneous_next,
+#creditSingleDateReport_previous, #creditSingleDateReport_next, #creditTwoDateReport_previous, #creditTwoDateReport_next, #creditSaleWiseCustomerReport_previous, #creditSaleWiseCustomerReport_next,
+#creditSaleProductWiseReport_previous, #creditSaleProductWiseReport_next, #billnowiseCredit_previous, #billnowiseCredit_next, #barcodewiseCredit_previous,
+#barcodewiseCredit_next, #paymentModeWiseReportTableForCC_previous, #paymentModeWiseReportTableForCC_next, #CSR1SingleDateReport_previous,
+#CSR1SingleDateReport_next, #CSR2TwoDateReport_previous, #CSR2TwoDateReport_next, #CSR3SaleWiseCustomerReport_previous, #CSR3SaleWiseCustomerReport_next,
+#billnowiseCCSR_previous, #billnowiseCCSR_next, #barcodewiseCCSR_previous, #barcodewiseCCSR_next, #catWiseStock_previous, #catWiseStock_next,
+#barcodeWiseCurrentStock_previous, #barcodeWiseCurrentStock_next, #supplierBillWiseData_previous, #supplierBillWiseData_next, #bankNameWiseTable_previous,
+#bankNameWiseTable_next, #billNoWisePurRetReport_previous, #billNoWisePurRetReport_next, #list_first, #list_last, #advanceBookingRangeWiseReport_previous,
+#advanceBookingRangeWiseReport_next, #creditDebitReport_previous, #creditDebitReport_next, #advanceBookigSuppAndRangeWise_previous, #advanceBookigSuppAndRangeWise_next,
+#advanceBooking_BookingNoWise_previous, #advanceBooking_BookingNoWise_next, #saleTwoDate_previous, #saleTwoDate_next, #rangeWisePurchaseGraphTable_previous,
+#rangeWisePurchaseGraphTable_next, #example3_previous, #example3_next, #itemName2_previous, #itemName2_next, #itemName1_previous, #itemName1_next      
+ {
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff !important;
+}
+.dataTables_filter label {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+tbody {
+	text-align: center;
+}
+thead {
+    background: #ba0707;
+    color: #fff;
+}
+th.sorting, th.sorting_asc, th.sorting_disabled {
+    text-align: center;
+    font-weight: 700 !important;
+    font-size: 18px;
+    vertical-align: middle !important;
+}
+a.paginate_button.current {
+    font-size: 15px;
+    color: #000;
+    font-weight: 700;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+	color: #fff !important;
+	font-weight: 700;
+}
+tfoot th {
+    text-align: center;
+    color: #fff;
+    background-color: #ba0707;
+}
+#currStock_paginate {
+    padding: 3px !important;
+}
+tr.odd {
+    background-color: #fff !important;
+}
+tr.even {
+	background-color: #e2dede !important;
+}
+tbody tr:hover {
+    background: linear-gradient(45deg, #de1717, blue);
+    color: #fff;
+}
+tbody td {
+    border: none !important;
+}
+.dataTables_wrapper .dataTables_filter input {
+    color: #000;
+}
+td.sorting_1 {
+    background: none !important;
+}
+#example1_info, #example2_info, #unPaidAmt_info, #catName_info, #itemName_info, #suppName_info, #list_info, #preGood_info, #currStock1_info,
+#example_info, #barcodeBasedStock_info, #example4_info, #suppGstReportBetweenTwoDatesDataTable_info, #purchaseNoGstWise_info, #saleB2CGSTReport_info,
+#purchaseB2BGSTReport_info, #supplierNameWiseTable_info, #supplierSingleDatetable_info, #supplierBetweenTwoDatestable_info, #customerNameWiseData2_info,
+#customerSingleDatetable_info, #customerBetweenTwoDates_info, #customerNameWiseData_info, #employeeSingleDatetable_info, #empBetweenTwoDates_info,
+#expenseSingleDatetable_info, #expenseBetweenTwoDates_info, #creditDebitReport_info, #bankBetweenTwoDatesTable_info, #supplierNameWiseTable1_info,
+#singleDatePurchase50_info, #twoDatePurchase50_info, #supplierCategoryWise_info, #supplierProductWise_info, #voucherNoWiseData_info,
+#barcodeWisePurchaseReport_info, #paymentDueDateWiseTable_info, #twoDateGstReturnPurchase_info, #expenseRangeReport_info, #purchaseReturnSingleDateReport_info,
+#purchaseReturnRangeReport_info, #saleCategoryWise_info, #saleProductWise_info, #saleSingleDate_info, #saleTwoDate_info, #saleTwoDate_userWise_info,
+#saleTwoDateBillNo_info, #twoDateGstReturn_info, #paymentModeWiseReportTable_info, #saleTaxWise_info, #miscellaneousSingleDateReport_info,
+#miscellaneousTwoDateReport_info, #miscellaneousSaleWiseCustomerReport_info, #billnowiseMiscellaneous_info, #barcodewiseMiscellaneous_info,
+#creditTwoDateReport_info, #creditSaleWiseCustomerReport_info, #creditSaleProductWiseReport_info, #billnowiseCredit_info, #barcodewiseCredit_info,
+#paymentModeWiseReportTableForCC_info, #CSR1SingleDateReport_info, #CSR2TwoDateReport_info, #CSR3SaleWiseCustomerReport_info, #billnowiseCCSR_info,
+#barcodewiseCCSR_info, #catWiseStock_info, #barcodeWiseCurrentStock_info, #creditSingleDateReport_info, #supplierBillWiseData_info,
+#bankNameWiseTable_info, #billNoWisePurRetReport_info, #advanceBookingRangeWiseReport_info, #advanceBookigSuppAndRangeWise_info, #advanceBooking_BookingNoWise_info,
+#rangeWisePurchaseGraphTable_info, #example3_info, #itemName2_info, #itemName1_info {
+    color: #fff;
+    margin: 10px;
+    padding: 0px;
+    font-size: 15px;
+    font-weight: 700;
+}
+#example1_paginate ,#example2_paginate, #catName_paginate, #itemName_paginate, #suppName_paginate, #list_paginate, #example_paginate,
+#barcodeBasedStock_paginate, #example4_paginate, #saleB2CGSTReport_paginate, #purchaseB2BGSTReport_paginate, #supplierNameWiseTable_paginate,
+#supplierSingleDatetable_paginate, #supplierBetweenTwoDatestable_paginate, #customerNameWiseData2_paginate, #customerSingleDatetable_paginate,
+#customerBetweenTwoDates_paginate, #customerNameWiseData_paginate, #employeeSingleDatetable_paginate, #empBetweenTwoDates_paginate,
+#expenseSingleDatetable_paginate, #expenseBetweenTwoDates_paginate, #bankBetweenTwoDatesTable_paginate, #supplierNameWiseTable1_paginate,
+#twoDatePurchase50_paginate, #supplierCategoryWise_paginate, #supplierProductWise_paginate, #voucherNoWiseData_paginate, #barcodeWisePurchaseReport_paginate,
+#twoDateGstReturnPurchase_paginate, #expenseRangeReport_paginate, #purchaseReturnSingleDateReport_paginate, #purchaseReturnRangeReport_paginate,
+#saleCategoryWise_paginate, #saleProductWise_paginate, #saleSingleDate_paginate, #saleTwoDate_userWise_paginate, #saleTwoDateBillNo_paginate,
+#twoDateGstReturn_paginate, #paymentModeWiseReportTable_paginate, #saleTaxWise_paginate, #miscellaneousSingleDateReport_paginate, #miscellaneousTwoDateReport_paginate,
+#miscellaneousSaleWiseCustomerReport_paginate, #billnowiseMiscellaneous_paginate, #barcodewiseMiscellaneous_paginate, #creditSingleDateReport_paginate,
+#creditTwoDateReport_paginate, #creditSaleWiseCustomerReport_paginate, #creditSaleProductWiseReport_paginate, #billnowiseCredit_paginate,
+#barcodewiseCredit_paginate, #paymentModeWiseReportTableForCC_paginate, #CSR1SingleDateReport_paginate, #CSR2TwoDateReport_paginate,
+#CSR3SaleWiseCustomerReport_paginate, #billnowiseCCSR_paginate, #barcodewiseCCSR_paginate, #catWiseStock_paginate, #barcodeWiseCurrentStock_paginate,
+#supplierBillWiseData_paginate, #bankNameWiseTable_paginate, #billNoWisePurRetReport_paginate, #example3_paginate, #itemName2_paginate,
+#itemName1_paginate {
+    padding: 4px;
+}
+#unPaidAmt {
+    border: 1px solid #fff !important;
+}
+#unPaidAmt_paginate, #preGood_paginate, #currStock1_paginate, #suppGstReportBetweenTwoDatesDataTable_paginate,#purchaseNoGstWise_paginate
+{
+    padding: 3px;
+}
+.dataTables_length select {
+    color: #000 !important;
+}
+#itemName_length, #list_length, #purchaseNoGstWise_length, #singleDatePurchase50_length, #paymentDueDateWiseTable_length, #example4_length,
+#advanceBookingRangeWiseReport_length, #barcodeWiseCurrentStock_length, #supplierSingleDatetable_length, #supplierBetweenTwoDatestable_length,
+#suppGstReportBetweenTwoDatesDataTable_length, #saleB2CGSTReport_length, #purchaseB2BGSTReport_length, #supplierBillWiseData_length,
+#customerNameWiseData2_length, #customerSingleDatetable_length, #customerBetweenTwoDates_length, #customerNameWiseData_length,
+#employeeSingleDatetable_length, #empBetweenTwoDates_length, #expenseSingleDatetable_length, #expenseBetweenTwoDates_length,
+#creditDebitReport_length, #bankBetweenTwoDatesTable_length, #advanceBookigSuppAndRangeWise_length, #advanceBooking_BookingNoWise_length,
+#twoDatePurchase50_length, #supplierCategoryWise_length, #barcodeWisePurchaseReport_length, #twoDateGstReturnPurchase_length,
+#expenseRangeReport_length, #purchaseReturnSingleDateReport_length, #purchaseReturnRangeReport_length, #billNoWisePurRetReport_length,
+#saleCategoryWise_length, #saleSingleDate_length, #saleTwoDate_length, #saleTwoDate_userWise_length, #saleTwoDateBillNo_length,
+#twoDateGstReturn_length, #paymentModeWiseReportTable_length, #saleTaxWise_length, #miscellaneousSingleDateReport_length,
+#miscellaneousTwoDateReport_length, #billnowiseMiscellaneous_length, #barcodewiseMiscellaneous_length,
+#miscellaneousSaleWiseCustomerReport_length, #catWiseStock_length, #creditSingleDateReport_length, #creditTwoDateReport_length,
+#creditSaleWiseCustomerReport_length, #barcodewiseCredit_length, #paymentModeWiseReportTableForCC_length, #CSR1SingleDateReport_length,
+#CSR2TwoDateReport_length, #CSR3SaleWiseCustomerReport_length, #barcodewiseCCSR_length, #rangeWisePurchaseGraphTable_length,
+#itemName2_length, #itemName1_length, #suppName_length
+   {
+    color: #fff;
+    padding: 5px;
+    margin: 10px;
+    font-size: 16px;
+}
+.dataTables_length select {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 1px;
+}
+#example_length, #billnowiseCCSR_length, #example1_length {
+    color: #fff;
+    margin: 10px;
+    padding: 5px;
+    font-size: 14px;
+}
+/* .footer_margin_top .ui-dialog-titlebar.ui-corner-all.ui-widget-header.ui-helper-clearfix { */
+    /* background: none; */
+    /* border: none; */
+    /* display: none; */
+/* } */
+#logo {
+    width: 110px;
+    height: auto;
+    position: fixed;
+    top: 10%;
+    right: 1%;
+    z-index: -1;
+    opacity: 0.6;
+}
+.dataTables_scrollBody {
+    background: #fff;
+}
+#currStock1_wrapper input[type="text"] {
+    color: #000;
+    outline: none;
+    border-radius: 15px;
+    border: none;
+    padding: 5px;
+    text-align: center;
+}
+td.dataTables_empty {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/*--------------------------------------------------- Reports (DataTables) Css Ends Here ---------------------------------------------------*/
+
+/*--------------------------------------------------- Tabs Css Starts Here ---------------------------------------------------*/
+.customertra ul {
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+.customertra a {
+    outline: none !important;
+    border: none !important;
+    border-radius: 10px !important;
+    color: #fff;
+    background-color: #087cea85;
+    font-size: 16px;
+    font-weight: 600;
+}
+.customertra li {
+    width: 20%;
+    text-align: center;
+    margin: 10px;
+}
+.customertra li a:hover {
+    background-color: #087cea !important;
+    color: #fff !important;
+}
+.emplexpentran ul {
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+.emplexpentran a {
+    outline: none !important;
+    border: none !important;
+    border-radius: 10px !important;
+    color: #fff;
+    background-color: #087cea85;
+    font-size: 16px;
+    font-weight: 600;
+}
+.emplexpentran li {
+    width: 20%;
+    text-align: center;
+    margin: 10px;
+}
+.emplexpentran li a:hover {
+    background-color: #087cea !important;
+    color: #fff !important;
+}
+.banktrans ul {
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+.banktrans a {
+    outline: none !important;
+    border: none !important;
+    border-radius: 10px !important;
+    color: #fff;
+    background-color: #087cea85;
+    font-size: 16px;
+    font-weight: 600;
+}
+.banktrans li {
+    width: 20%;
+    text-align: center;
+    margin: 10px;
+}
+.banktrans li a:hover {
+    background-color: #087cea !important;
+    color: #fff !important;
+}
+.advancebook ul {
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+.advancebook a {
+    outline: none !important;
+    border: none !important;
+    border-radius: 10px !important;
+    color: #fff;
+    background-color: #087cea85;
+    font-size: 16px;
+    font-weight: 600
+}
+.advancebook li {
+    width: 20%;
+    text-align: center;
+    margin: 10px;
+}
+.advancebook li a:hover {
+    background-color: #087cea !important;
+    color: #fff !important;
+}
+.purchaseret ul {
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+.purchaseret a {
+    outline: none !important;
+    border: none !important;
+    border-radius: 10px !important;
+    color: #fff;
+    background-color: #087cea85;
+    font-size: 16px;
+    font-weight: 600;
+}
+.purchaseret li {
+    width: 20%;
+    text-align: center;
+    margin: 10px;
+}
+.purchaseret li a:hover {
+    background-color: #087cea !important;
+    color: #fff !important;
+}
+.salereturn ul {
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+.salereturn a {
+    outline: none !important;
+    border: none !important;
+    border-radius: 10px !important;
+    color: #fff;
+    background-color: #087cea85;
+    font-size: 16px;
+    font-weight: 600;
+}
+.salereturn li {
+    width: 20%;
+    text-align: center;
+    margin: 10px;
+}
+.salereturn li a:hover {
+    background-color: #087cea !important;
+    color: #fff !important;
+}
+.stockreport ul {
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+.stockreport a {
+    outline: none !important;
+    border: none !important;
+    border-radius: 10px !important;
+    color: #fff;
+    background-color: #087cea85;
+    font-size: 16px;
+    font-weight: 600;
+}
+.stockreport li {
+    width: 20%;
+    text-align: center;
+    margin: 10px;
+}
+.stockreport li a:hover {
+    background-color: #087cea !important;
+    color: #fff !important;
+}
+.creditcussalereturn ul {
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+.creditcussalereturn a {
+    outline: none !important;
+    border: none !important;
+    border-radius: 10px !important;
+    color: #fff;
+    background-color: #087cea85;
+    font-size: 16px;
+    font-weight: 600;
+}
+.creditcussalereturn li {
+    width: 20%;
+    text-align: center;
+    margin: 10px;
+}
+.creditcussalereturn li a:hover {
+    background-color: #087cea !important;
+    color: #fff !important;
+}
+.allgraph ul {
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+.allgraph a {
+    outline: none !important;
+    border: none !important;
+    border-radius: 10px !important;
+    color: #fff;
+    background-color: #087cea85;
+    font-size: 16px;
+    font-weight: 600;
+}
+.allgraph li {
+    width: 20%;
+    text-align: center;
+    margin: 10px;
+}
+.allgraph li a:hover {
+    background-color: #087cea !important;
+    color: #fff !important;
+}
+.allreports ul {
+    border: none;
+    display: inline-block;
+    justify-content: center;
+}
+.allreports a {
+    outline: none !important;
+    border: none !important;
+    border-radius: 10px !important;
+    color: #fff;
+    background-color: #087cea85;
+    font-size: 17px;
+    width: 85%;
+    font-weight: 700;
+}
+.allreports li {
+    width: 31%;
+    text-align: center;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: #555;
+    cursor: default;
+    background: #087cea !important;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+    color: #fff !important;
+}
+/* .allreports li.active {
+	background-color: #087cea !important;
+	color: #fff;
+} */
+.allreports li a:hover {
+    background-color: #087cea !important;
+    color: #fff !important;
+}
+.creditcust ul {
+    border: none;
+    /* display: inline-block; */
+    justify-content: center;
+    width: 100%;
+}
+.creditcust a {
+    outline: none !important;
+    border: none !important;
+    border-radius: 10px !important;
+    color: #fff;
+    background-color: #087cea85;
+    font-size: 16px;
+    width: 63%;
+    font-weight: 600;
+}
+.creditcust li {
+    width: 31%;
+    text-align: center;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+.creditcust li a:hover {
+    background-color: #087cea !important;
+    color: #fff !important;
+}
+.salereport ul {
+    border: none;
+    display: inline-block;
+    justify-content: center;
+}
+.salereport a {
+    outline: none !important;
+    border: none !important;
+    border-radius: 10px !important;
+    color: #fff;
+    background-color: #087cea85;
+    font-size: 16px;
+    width: 72%;
+    font-weight: 600;
+}
+.salereport li {
+    width: 31%;
+    text-align: center;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+.salereport li a:hover {
+    background-color: #087cea !important;
+    color: #fff !important;
+}
+.financialtranr ul {
+    border: none;
+    display: inline-block;
+    justify-content: center;
+}
+.financialtranr a {
+    outline: none !important;
+    border: none !important;
+    border-radius: 10px !important;
+    color: #fff;
+    background-color: #087cea85;
+    font-size: 16px;
+    width: 85%;
+    font-weight: 600;
+}
+.financialtranr li {
+    width: 31%;
+    text-align: center;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+}
+.financialtranr li a:hover {
+    background-color: #087cea !important;
+    color: #fff !important;
+}
+.purchaser ul {
+    border: none;
+    display: inline-block;
+    justify-content: center;
+}
+.purchaser a {
+    outline: none !important;
+    border: none !important;
+    border-radius: 10px !important;
+    color: #fff;
+    background-color: #087cea85;
+    font-size: 16px;
+    width: 100%;
+    font-weight: 600;
+}
+.purchaser li {
+    width: 23%;
+    text-align: center;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+}
+.purchaser li a:hover {
+    background-color: #087cea !important;
+    color: #fff !important;
+}
+
+
+/*--------------------------------------------------- Tabs Css Ends Here ---------------------------------------------------*/
+
+/*--------------------------------------------------- Grid Tables Starts Here ---------------------------------------------------*/
+input.ui-widget-content.ui-pg-input {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+.ui-pg-table td {
+    color: #fff;
+}
+.ui-jqgrid-jquery-ui.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-jqdialog {
+    width: 300px;
+    height: auto;
+    z-index: 968000;
+    top: 134px;
+    left: 500px;
+    display: block;
+}
+.ui-jqdialog-content .DataTD {
+    /* padding: 2px; */
+    /* border: 0 none; */
+    /* vertical-align: top; */
+    /* width: 98%; */
+}
+.ui-jqdialog-content select.FormElement {
+    padding: .3em;
+    margin-bottom: 3px;
+    width: 100%;
+}
+.ui-jqdialog-content input.FormElement {
+    padding: .5em .3em;
+    margin-bottom: 3px;
+    outline: none;
+}
+.ui-jqdialog-content input.FormElement {
+    padding: .5em .3em;
+    margin-bottom: 3px;
+    outline: none;
+    border: 1px solid #000;
+    width: 130px;
+}
+.ui-jqdialog-content select.FormElement {
+    padding: .3em;
+    margin-bottom: 3px;
+    width: 100%;
+    border: 1px solid #000;
+    outline: none;
+}
+.ui-jqdialog-content .CaptionTD {
+    white-space: nowrap;
+    text-align: start !important;
+    padding-left: 15px !important;
+}
+.ui-jqdialog .EditButton-ltr .fm-button-icon-left .fm-button-icon, .ui-jqdialog .EditButton-rtl .fm-button-icon-right .fm-button-icon {
+    margin-right: .2em;
+    display: none;
+}
+.ui-jqdialog .ui-jqconfirm {
+    padding: 1.4em 1em;
+    border-width: 3px;
+    position: absolute;
+    bottom: 10px;
+    right: 12px;
+    overflow: visible;
+    display: none;
+    height: 110px;
+    width: 260px;
+    text-align: center;
+    font-size: 14px;
+}
+#sNew, #nNew, #cNew {
+    height: 30px;
+}
+.ui-jqdialog .fm-button {
+    display: inline-block;
+    padding: .4em .5em;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    zoom: 1;
+    height: 35px;
+    outline: none;
+    /* pointer-events: none; */
+}
+hr.ui-widget-content {
+    border: 1px solid #4a60a1;
+    height: 0px;
+    margin: 15px 0 !important;
+    width: 100%;
+}
+.searchFilter {
+    margin: 15px;
+}
+.ui-corner-all.selectLabel {
+    height: 30px;
+    width: 120px;
+    outline: none;
+}
+.ui-corner-all.selectopts {
+    height: 30px;
+    width: 120px;
+    outline: none;
+}
+#jqg2, #jqg4, #jqg3 {
+    height: 30px;
+    outline: none;
+}
+td.columns, td.operators, td.data  {
+    padding: 5px;
+}
+span.fm-button-icon.ui-icon.ui-icon-search {
+    display: none;
+}
+.ui-jqdialog .ui-jqdialog-titlebar {
+    padding: 6px !important;
+    height: 50px !important;
+    margin-bottom: 15px;
+    border-radius: 0px;
+}
+.ui-jqdialog-title {
+    font-size: 16px;
+    top: 8px;
+}
+.ui-widget.ui-widget-content {
+    border: 1px solid #4a60a1  !important;
+    box-shadow: 0px 0px 8px 5px rgb(0 0 0 / 20%);
+}
+.ui-jqdialog-content {
+    font-size: 14px;
+}
+.ui-jqdialog .ui-jqdialog-titlebar-ltr .ui-jqdialog-titlebar-close {
+    right: .3em;
+    outline: none;
+}
+.ui-jqgrid-jquery-ui.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-jqdialog {
+	z-index: 950000 !important;	
+}
+#nData, #pData {
+    float: left;
+    margin: 3px;
+    padding: 0;
+    /* width: 15px; */
+    border: 1px solid #4a60a1 !important;
+}
+
+/*--------------------------------------------------- Grid Tables Ends Here ---------------------------------------------------*/
+
+/*--------------------------------------------------- Loader Starts Here ---------------------------------------------------*/
+/* .loadingContainer {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.hide {
+	display: none;
+}
+.loadingContainer .hide {
+	display: none;
+}
+.loading {
+	border: 6px solid #ccc;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border-top-color: #1ecd97;
+	border-left-color:#1ecd97;
+	-webkit-animation: infinite-spinning 1.5s ease-in-out infinte;
+	animation: infinite-spinning 1.5s ease-in-out infinte;
+}
+@keyframes infinite-spinning {
+	0% {
+	transform: rotate(0deg);
+	} 
+	100% {
+	transform: rotate(180deg);
+	}
+	from {
+    	-webkit-transform: rotate(0deg);
+    	transform: rotate(0deg);
+  	}
+  	to {
+    	-webkit-transform: rotate(360deg);
+    	transform: rotate(360deg);
+  	}	
+} */
+
+/* .abc {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border: 1px solid black;
+}
+#loader {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: lightblue;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in;
+}
+.hide {
+  opacity: 0;
+  visibility: hidden;
+} */
+
+.wrapper {
+  position: relative;
+  min-height: 500px; 
+}
+.loading {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0; 
+  background-color: rgba(70,70,70,.5);
+  /* color: #fff;
+  font-size: 24px; */
+  display: none;
+  border: 6px solid #ccc;
+  width: 100%;
+  background-image: url("../images/Comp-2.gif");
+  /* background-position: center; */
+/*   background-size: cover;
+  background-repeat: no-repeat; */
+  /* width: 100px;
+  height: 100px; 
+  border-radius: 50%;
+  border-top-color: #1ecd97;
+  border-left-color:#1ecd97;
+  animation: infinite-spinning 0.5s ease-in-out infinte;*/
+} 
+/* @keyframes infinite-spinning {
+	0% {
+	transform: rotate(0deg);
+	} 
+	50% {
+	transform: rotate(180deg);
+	} 
+	0% {
+	transform: rotate(360deg);
+	} */
+	/* from {
+    	-webkit-transform: rotate(0deg);
+    	transform: rotate(0deg);
+  	}
+  	to {
+    	-webkit-transform: rotate(360deg);
+    	transform: rotate(360deg);
+  	}	 */
+
+/* table {
+  width: 100%;
+} */
+/*--------------------------------------------------- Loader Ends Here ---------------------------------------------------*/
+
+/*--------------------------------------------------- Media Query Starts Here ---------------------------------------------------*/
+@media screen and (max-width: 1180px) {
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-resizable {
+    position: absolute !important;
+    height: auto !important;
+    width: 90% !important;
+    left: 5% !important;
+	z-index: 1px;
+}
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front {
+	position: absolute !important;
+    height: auto !important;
+    width: 90% !important;
+    left: 5% !important;
+}
+.col-md-3.col-sm-12.col-xs-12.col-xl-3.col-lg-3 {
+    width: 60%;
+    margin-left: 20%;
+}
+.col-md-4.col-sm-12.col-xs-12.col-xl-3.col-lg-3 {
+    width: 60%;
+    margin-left: 20%;
+}
+.financialtranr a {
+    width: 80%;
+}
+.purchaser a {
+    width: 80%;
+}
+.purchaser li {
+    width: 31%;
+}
+.miscellaneous input {
+	width: 100%;
+}
+.miscellaneous select {
+	width: 100%;
+}
+#prolossheading {
+    padding-top: 15px;
+}
+}
+
+/* .ui-jqgrid-jquery-ui.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-jqdialog {
+    top: 50% !important;
+    left: 33% !important;
+} */
+
+
+/* @media screen and (max-width: 992px) {
+#categoryListOfProductDetails { */
+   /*  margin-left: -2%;
+}
+.addcategory .container {
+	margin-left: -2%;
+}
+}
+
+
+#logo {
+    right: 8%;
+}
+#categoryListOfProductDetails {
+   /*  margin-left: -3%; */
+
+@media screen and (max-width: 992px) {
+.financialtranr li {
+    width: 47%;
+}
+.financialtranr a {
+    width: 100%;
+}
+.banktrans li {
+    width: 25%;
+}
+.suppliertra li {
+    width: 47%;
+    display: flex;
+    justify-content: center;
+}
+.suppliertra a {
+    width: 63%;
+}
+.suppliertra ul {
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+}
+.customertra li {
+    width: 47%;
+    display: flex;
+    justify-content: center;
+}
+.customertra a {
+    width: 63%;
+}
+.customertra ul {
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+}
+.allreports a {
+    width: 95%;
+}
+.allreports li {
+    width: 47%;
+}
+.advancebook li {
+    width: 25%;
+}
+.purchaser li {
+    width: 45%;
+}
+.salereport li {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+.salereport a {
+    width: 100%;
+}
+.salereport ul {
+    border: none;
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+}	
+.salereturn li {
+    width: 30%;
+    display: flex;
+}
+.salereturn a {
+    width: 100%;
+}
+.salereturn ul {
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+}
+.stockreport li {
+    width: 30%;
+    text-align: center;
+    margin: 10px;
+}
+.stockreport a {
+    width: 100%;
+}
+.stockreport ul {
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+}
+.creditcust a {
+    width: 95%;
+}
+.creditcust li {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+.creditcussalereturn a {
+    width: 80%;
+}
+.creditcussalereturn li {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+.creditcussalereturn ul {
+    border: none;
+    display: inline-block;
+    justify-content: center;
+}
+.allgraph ul {
+    display: inline-block;
+    width: 100%;
+    justify-content: center;
+}
+.allgraph li {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+.allgraph a {
+    width: 90%;
+}
+}
+
+
+/* .ui-jqgrid-jquery-ui.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-jqdialog {
+     left: 28% !important;
+} */
+
+
+@media screen and (max-width: 767px) {
+.addcategory .container {
+    margin-left: 0%;
+}
+.col-md-3.col-sm-12.col-xs-12.col-xl-3.col-lg-3 {
+    width: 80%;
+    margin-left: 10%;
+}
+.col-md-4.col-sm-12.col-xs-12.col-xl-3.col-lg-3 {
+    width: 80%;
+    margin-left: 10%;
+}
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-resizable {
+    position: absolute !important;
+    height: auto !important;
+    width: 90% !important;
+    left: 5% !important;
+	z-index: 1px;
+}
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front {
+	position: absolute !important;
+    height: auto !important;
+    width: 90% !important;
+    left: 5% !important;
+}
+#popupcreditcol {
+    width: 50%;
+    margin-left: 0;
+}
+.dt-buttons {
+    float: left !important;
+    text-align: center;
+}
+.financialtranr li {
+    width: 44%;
+}
+.suppliertra a {
+    width: 80%;
+}	
+.suppliertra li {
+    width: 45%;
+}
+.customertra a {
+    width: 80%;
+}	
+.customertra li {
+    width: 45%;
+}
+.emplexpentran li {
+    width: 25%;
+}
+.banktrans li {
+    width: 35%;
+}
+.allreports li {
+    width: 46%;
+}
+.advancebook li {
+    width: 32%;
+}
+.purchaseret li {
+    width: 28%;
+}
+.salereturn a {
+    width: 85%;
+}
+.salereturn li {
+    width: 46%;
+    display: flex;
+    justify-content: center;
+}
+.stockreport a {
+    width: 85%;
+}
+.stockreport li {
+    width: 46%;
+    display: flex;
+	justify-content: center;
+}
+.creditcust a {
+    width: 80%;
+}
+.creditcust li {
+    width: 46%;
+    display: flex;
+    justify-content: center;
+}
+.creditcussalereturn li {
+    width: 46%;
+    display: flex;
+    justify-content: center;
+}
+.allgraph a {
+    width: 80%;
+}
+.allgraph li {
+    width: 46%;
+    display: flex;
+    justify-content: center;
+}
+.salereport li {
+    width: 46%;
+}
+.salereport a {
+    width: 85%;
+}
+#billheading {
+    margin-top: 25px;
+}
+
+
+	/* .mainWrap {
+		width: auto;
+		padding: 30px 20px;
+	} */
+	.menu {
+		display: none;
+	}
+	.responsive-menu {
+		display: block;
+	}
+	/* nav {
+		margin: 0;
+		background: none;
+	}
+	.menu li {
+		display: block;
+		margin: 0;
+	}
+	.menu li a {
+		background: #fff;
+		color: #797979;
+	}
+	.menu li a:hover, .menu li:hover>a {
+		background: #8c7674;
+		color: #fff;
+	}
+	.menu ul {
+		visibility: hidden;
+		opacity: 0;
+		top: 0;
+		left: 0;
+		width: 100%;
+		transform: initial;
+	}
+	.menu li:hover>ul {
+		visibility: visible;
+		opacity: 1;
+		position: relative;
+		transform: initial;
+	}
+	.menu ul ul {
+		left: 0;
+		transform: initial;
+	}
+	.menu li>ul ul:hover {
+		transform: initial;
+	} */
+
+
+
+}
+
+/* .ui-jqgrid-jquery-ui.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-jqdialog {
+    left: 18% !important;
+} */
+
+@media screen and (max-width: 580px) {
+#categoryListOfProductDetails {
+    margin-left: -3%;
+}
+#invoicereprintcol {
+    width: 80%;
+    margin-left: 10%;
+}
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-resizable {
+    position: absolute !important;
+    height: auto !important;
+    width: 100% !important;
+    left: 5% !important;
+    z-index: 1px;
+}
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front {
+	position: absolute !important;
+    height: auto !important;
+    width: 100% !important;
+    left: 5% !important;
+}
+.col-md-3.col-sm-12.col-xs-12.col-xl-3.col-lg-3 {
+    width: 80%;
+    margin-left: 10%;
+}
+#transid {
+    width: 80%;
+    margin-left: 10%;
+}
+.footer {
+    font-size: 16px;
+}
+.suppliertra a {
+    width: 95%;
+}
+.customertra a {
+	width: 95%;
+}
+.emplexpentran li {
+    width: 35%;
+}
+.banktrans li {
+    width: 40%;
+}
+.allreports a {
+    width: 100%;
+}
+.advancebook a {
+    width: 85%;
+}
+.advancebook li {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+.advancebook ul {
+    display: inline-block;
+    width: 100%;
+}
+}
+
+/* div.dt-buttons {
+    float: left !important;
+    text-align: center;
+} */	
+
+
+@media screen and (max-width: 480px) {
+.container {
+    width: 300px;
+    /* margin-left: -5%; */
+}
+#dayreport, .subcategoryname, #subCategoryListOfProductDetails {
+    width: 100%;
+}
+#categoryListOfProductDetails {
+    margin-left: -5%;
+}
+.row.margin {
+    margin-top: 25px;
+}
+.topspace {
+    margin-top: 20px;
+}
+hr {
+    margin: 25px 0;
+}
+#invoicereprintcol {
+    width: 90%;
+    margin-left: 5%;
+}
+#notifycol {
+    width: 100%;
+    margin-left: 0%;
+}
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-resizable {
+    position: absolute !important;
+    height: auto !important;
+    width: 90% !important;
+    left: 5% !important;
+    z-index: 1px;
+}
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front {
+    position: absolute !important;
+    height: auto !important;
+    width: 90% !important;
+    left: 5% !important;
+    z-index: 1px;
+}
+#popupcreditcol {
+    width: 100%;
+}
+.col-md-3.col-sm-12.col-xs-12.col-xl-3.col-lg-3 {
+    width: 90%;
+    margin-left: 5%;
+}
+.col-md-4.col-sm-12.col-xs-12.col-xl-3.col-lg-3 {
+    width: 90%;
+    margin-left: 5%;
+}
+#productDetailsDialogDiv {
+    height: 950px !important;
+}
+.size {
+    margin-bottom: 30px;
+}
+#transid {
+    width: 90%;
+    margin-left: 5%;
+}
+.footer {
+    font-size: 12px;
+}
+#invoicebaseinvent {
+    width: 80%;
+    margin-left: 10%;
+    /* margin-right: -5px; */
+}
+#profitreport {
+    width: 100%;
+}
+#unPaidAmt {
+    border: 1px solid #000;
+}
+.financialtranr a {
+    width: 90%;
+}
+.financialtranr li {
+    width: 100%;
+}
+.suppliertra a {
+    width: 70%;
+}
+.suppliertra li {
+    width: 100%;
+}
+.customertra a {
+    width: 70%;
+}
+.customertra li {
+    width: 100%;
+}
+.emplexpentran li {
+    width: 42%;
+}
+.banktrans ul {
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+}
+.banktrans li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.banktrans a {
+    width: 60%;
+}
+.allreports li {
+    width: 44%;
+    height: 80px;
+}
+.advancebook a {
+    width: 50%;
+}
+.advancebook li {
+    width: 100%;
+}
+.purchaser a {
+    width: 60%;
+}
+.purchaser li {
+    width: 100%;
+}
+.purchaseret a {
+    width: 55%;
+}
+.purchaseret li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.purchaseret ul {
+    display: inline-block;
+    width: 100%;
+}
+.salereport a {
+    width: 70%;
+}
+.salereport li {
+    width: 100%;
+}
+.salereturn ul {
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+}
+.salereturn li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.salereturn a {
+    width: 75%;
+}
+.stockreport a {
+    width: 60%;
+}
+.stockreport li {
+    width: 100%;
+}
+.creditcust li {
+    width: 100%;
+}
+.creditcust a {
+    width: 60%;
+}
+.creditcussalereturn a {
+    width: 60%;
+}
+.creditcussalereturn li {
+    width: 100%;
+}
+#tableside {
+    position: relative;
+    left: 0%;
+    width: 160%;
+}
+/* .ui-jqdialog-content .DataTD {
+    width: 60%;
+} */
+.ui-jqdialog-content input.FormElement {
+    width: 100%;
+}
+.allgraph a {
+    width: 50%;
+}
+.allgraph li {
+    width: 100%;
+}
+.vouchspan {
+    font-size: 14px;
+}
+label#demo {
+    font-size: 14px;
+}
+#prolossheading {
+    padding-top: 25px;
+}
+.dataTables_wrapper .dataTables_filter input {
+    width: 70%;
+}
+}
+
+/* .ui-jqgrid-jquery-ui.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-jqdialog {
+    width: 90% !important;
+    top: 282px !important;
+    left: 5% !important;
+} */
+
+/*--------------------------------------------------- Media Query Ends Here ---------------------------------------------------*/

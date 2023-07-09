@@ -1,0 +1,245 @@
+@charset "ISO-8859-1";
+
+/* @charset "ISO-8859-1";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	margin: 0;
+	padding:0;
+	font-family: sans-serif;
+	background: #f0f0f0;
+}
+
+.supplierfields{
+	left: 20%;
+}
+.supplierbutton{
+	left: 25%;
+
+}
+
+.supplier_details{
+	position: relative;
+
+}
+.supplier_details h2{
+	margin: 130px 0 40px;
+	padding: 0;
+	color: #00000;
+	text-align: center;
+}
+.supplier_details input{
+	padding: 10px 0;
+	margin-bottom: 30px;
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: none;
+	border: none;
+	border-bottom: 2px solid #a92626;
+
+}
+
+.supplier_details input[type="button"]{
+	border-bottom: none;
+	cursor: pointer;
+	width: 40%;
+	
+}
+.supplier_details input[type="reset"]{
+	border-bottom: none;
+	cursor: pointer;
+	width: 40%;
+}
+.supplier_details form div{
+	position: relative;
+	
+}
+.supplier_details form div label{
+	position: absolute;
+	top: 10px;
+	left: 15px;
+	color: #999;
+	transition: .5s;
+	pointer-events: none;
+	font-size: 16px;
+}
+.supplier_details input:focus ~ label
+{
+	top: -12px;
+	left: 0;
+	color: #000;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.supplier_details input:valid ~ label
+{
+	top: -12px;
+	color: black;
+	font-size: 15px;
+}
+
+.supplier_details select:valid ~ label
+{
+	top: -12px;
+	color: black;
+	font-size: 12px;
+}
+
+.supplier_details select
+{
+	padding: 10px 0;
+	margin-bottom: 30px;
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: none;
+	border: none;
+	border-bottom: 2px solid #a92626;
+	background-color: f0f0f0;
+	
+}
+
+.supplier_details input[type="text"]{
+	background-color: f0f0f0;
+}
+ */
+ 
+ *{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	margin: 0;
+	padding:0;
+	font-family: sans-serif;
+	background: #f0f0f0;
+}
+.customer_detail_edit{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	/* width: 1000px; */
+	background: f0f0f0;
+	padding: 40px;
+	box-sizing: border-box;
+	/* border: 1px solid rgba(0,0,0,.1); */
+	/* box-shadow:0 5px 10px rgba(0,0,0,.2) */
+}
+.customer_detail_edit h2{
+	margin: 0 0 40px;
+	padding: 0;
+	color: #00000;
+	text-align: center;
+}
+.customer_detail_edit input{
+	padding: 10px 0;
+	margin-bottom: 30px;
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: none;
+	background-color: #f0f0f0;
+	/* border: none; */
+	border: 1px solid #000;
+	   border-radius: 9px;
+	    border-color: #21409c;
+	/* border-bottom: 2px solid #a92626; */
+}
+
+.customer_detail_edit span{
+	position: absolute;
+	top: 15px;
+	left: 20px;
+	padding: 0;
+	transition: 0.3s;
+	pointer-event: none;
+   /*  background:#fff;  */
+	text-trnsform: uppercase; 
+}
+
+.customer_detail_edit input:focus ~ span,
+.customer_detail_edit input:valid ~ span{
+	top: -12px;
+	left: 25px;
+	font-size: 12px;
+	padding: 2px 4px;
+	background-color: #f0f0f0;
+	
+	/* border: 1px solid blue */
+}
+
+.customer_detail_edit input[type="text"]{
+	    border-radius: 9px;
+	    border-color: #21409c;
+	    background-color: #f0f0f0;
+	    padding: 13px;
+}
+
+.customer_detail_edit input[type="button"]{
+	border-bottom: none;
+	cursor: pointer;
+	width: 100%;
+	
+}
+.customer_detail_edit input[type="reset"]{
+	border-bottom: none;
+	cursor: pointer;
+	width: 100%;
+}
+.customer_detail_edit form div{
+	position: relative;
+	
+}
+/* 
+.customer_detail_edit input[type="list"]
+{
+	padding: 10px 0;
+	margin-bottom: 30px;
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: none;
+	border: 1px solid #000;
+	background-color: #f0f0f0;
+	
+	
+} */
+
+@media only screen and (max-width: 600px){
+	.customer_detail_edit  {position: relative;
+	top: 550px; }
+}
+
+@media only screen and (min-width: 768px){
+	.customer_detail_edit  {position: relative;top: 52%;}
+	/* .supplier_details .container  {left: 15%;} */
+}
+
+
+@media (min-device-width:769px) and (max-device-width:1024px){
+    .customer_detail_edit  {top: 35%;}
+}
+
+@media (min-width: 1200px) { .customer_detail_edit{position: relative;top: 55%;left: 61%;}
+.customer_detail_edit .supplierbutton_customer_detail {left: -9%;;}
+.customer_detail_edit h2{margin: 0 0 38px -328px;}
+}
+
+@media (min-device-width:1024px) and (max-device-width:1366px){
+	.customer_detail_edit{left:65%;}
+}
+
+@media (min-width: 1440px){
+	  .customer_detail_edit  {left: 65%;top: 35%;}
+}
+
+
+ 

@@ -1,0 +1,20 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+#loading{
+	width:100%;
+	height:100vh;
+	background-color:#fff;
+	background-image: url("/SMT/staticContent/images/gif-preloader-13.gif");
+	z-index: 999999;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+}
+#loading h4{
+	position:fixed;
+	left:45%;
+	top:60%;
+	font-weight:700;
+}

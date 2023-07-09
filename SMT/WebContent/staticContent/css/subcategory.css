@@ -1,0 +1,271 @@
+@charset "ISO-8859-1";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: #f0f0f0;
+}
+
+.subcategory {
+	position: absolute;
+	top: 5%;
+	left: 0;
+	width: 100%;
+	background: f0f0f0;
+	padding: 40px;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.subcategory h2 {
+	margin: 0 0 0px;
+	padding: 0;
+	color: #000;
+	text-align: center;
+	font-weight: bold;
+}
+
+.subcategory input, select {
+	padding: 10px 10px;
+	margin-bottom: 30px;
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: none;
+	/* border: none; */
+	border: 1px solid #000;
+	/* border-bottom: 2px solid #a92626; */
+}
+
+.subcategory span {
+	position: absolute;
+	top: 15px;
+	left: 20px;
+	padding: 0;
+	transition: 0.3s;
+	pointer-event: none;
+	/*  background:#fff;  */
+	text-trnsform: uppercase;
+	font-weight: bold;
+}
+
+.subcategory label {
+	position: absolute;
+	top: -12px;
+	left: 12px;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 2px 4px;
+	background-color: #f0f0f0;
+}
+
+.subcategory input:focus ~ span, .subcategory input:valid ~ span {
+	top: -12px;
+	left: 12px;
+	font-weight: bold;
+	font-size: 12px;
+	padding: 2px 4px;
+	background-color: #f0f0f0;
+
+	/* border: 1px solid blue */
+}
+
+.subcategory input[type="list"] {
+	border-radius: 9px;
+	border-color: #21409c;
+}
+
+.subcategory input[type="button"] {
+	border-bottom: none;
+	cursor: pointer;
+	padding: 10px;
+	width: 130px;
+	outline: none !important;
+    border: none;
+}
+
+.subcategory input[type="reset"] {
+	border-bottom: none;
+	cursor: pointer;
+	padding: 10px;
+	width: 130px;
+    border: none;
+    outline: none !important;
+}
+/* .subcategory form div{
+	position: relative;
+	
+}
+ */
+.subcategory input, select {
+	border-radius: 9px;
+	border-color: #21409c;
+	background-color: #f0f0f0;
+	padding: 13px;
+}
+
+#btnrow {
+	/* margin-left: 23%; */
+}
+#btnrow1 {
+	margin-left: 17%;
+}
+
+#addcatbtn {
+	padding: 10px 13px;
+	width: 14%;
+}
+
+#addcatgry {
+	/* width: 40%; */
+	margin-left: 30%;
+	height:60px;
+}
+/* sub category */
+.col-lg-2 {
+	width: 20%;
+}
+
+.col-md-offset-2 {
+	margin-left: 30.666667%;
+}
+
+@media screen and (max-width:1180px) {
+	#addcatgry {
+		width: 40%;
+		/* margin-left: 32%; */
+	}
+	#btnrow {
+		/* margin-left: 19%; */
+	}
+	#addcatbtn {
+		padding: 10 24px;
+		width: 15%;
+	}
+	/* sub category */
+	.col-lg-2 {
+		width: 20%;
+	}
+	.col-md-offset-2 {
+		margin-left: 18.666667%;
+		margin-right: 14%;
+	}
+	.col-md-3 {
+		width: 72%;
+	}
+	.subcategory {
+		position: absolute;
+		top: 5%;
+		left: 0;
+		width: 100%;
+		background: f0f0f0;
+		padding: 40px;
+		box-sizing: border-box;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width:991px) {
+#addcatgry {
+    width: 50%;
+    margin-left: 25%;
+}
+	#btnrow {
+		/* margin-left: 12%; */
+	}
+	#addcatbtn {
+		display: inline-block;
+		width: 16%;
+		padding: 10px 24px;
+	}
+	/* sub category */
+	.col-lg-2 {
+		width: 20%;
+	}
+	.col-md-offset-2 {
+		margin-left: 12.666667%;
+		margin-right: 13%;
+	}
+	.subcategory {
+		position: absolute;
+		top: 6%;
+		left: 0;
+		width: 100%;
+		background: f0f0f0;
+		padding: 40px;
+		box-sizing: border-box;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width:767px) {
+	
+	.container {
+		width: 100%;
+		margin-left: 0%;
+	}
+	.box {
+		position: absolute;
+		top: 1%;
+		left: 0;
+		width: 100%;
+		background: f0f0f0;
+		padding: 40px;
+		box-sizing: border-box;
+		width: 100%;
+	}
+	#btnrow {
+		/* margin-left: 1%; */
+	}
+#addcatgry {
+    width: 60%;
+    margin-left: 20%;
+}
+	.col-md-3 {
+		width: 85%;
+		/* position: absolute; */
+	}
+	#addcatbtn {
+		display: inline-block;
+		width: 18%;
+		padding: 10 15px;
+	}
+	.subcategory {
+		position: absolute;
+		top: 2%;
+		left: 0;
+		width: 100%;
+		background: f0f0f0;
+		padding: 40px;
+		box-sizing: border-box;
+		width: 100%;
+	}
+	/* sub category */
+	.col-lg-2 {
+		width: 20%;
+	}
+	.col-md-offset-2 {
+		margin-left: -2.333333%;
+		margin-right: 1%;
+	}
+}
+
+@media screen and (max-width: 580px) {
+#addcatgry {
+    width: 70%;
+    margin-left: 15%;
+}	
+}
+
+@media screen and (max-width: 480px) {
+#addcatgry {
+    width: 90%;
+    margin-left: 5%;
+}
+}
